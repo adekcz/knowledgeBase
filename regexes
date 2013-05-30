@@ -1,0 +1,11 @@
+regex backtracking in IDEs
+IDE	find	replace	find/replace shortcut
+	PSpad	(group)	$1	ctrl+h
+	Netbeans**	(group)	$1
+	Jdev	(group)	\1	ctrl+r
+	eclipse	(group)	\1	ctrl+f
+	vim*	:% s/\(group\)/\1\1/g	% whole file, /g all occurences
+	visual studio 	(group)\1	$1	you are really to capture in “find” with “\” and in “replace” with “$”
+	IntelliJ	(group)	\$1
+
+
