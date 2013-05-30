@@ -26,3 +26,17 @@ zM - close all folds globaly
 zR - open all folds globaly
 unix: ctags
 
+When searching: http://vim.wikia.com/wiki/Search_and_replace
+., *, \, [, ], ^, and $ are metacharacters.
++, ?, |, {, }, (, and ) must be escaped to use their special function.
+\/ is / (use backslash + forward slash to search for forward slash)
+\t is tab, \s is whitespace
+\n is newline, \r is CR (carriage return = Ctrl-M = ^M)
+\{#\} is used for repetition. /foo.\{2\} will match foo and the two following characters. The \ is not required on the closing } so /foo.\{2} will do the same thing.
+\(foo\) makes a backreference to foo. Parenthesis without escapes are literally matched. Here the \ is required for the closing \).
+
+When replacing:
+\r is newline, \n is a null byte (0x00).
+\& is ampersand (& is the text that matches the search pattern).
+\1 inserts the text of the first backreference. \2 inserts the second backreference, and so on.
+
