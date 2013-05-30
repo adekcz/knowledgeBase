@@ -9,7 +9,6 @@ C - delete until end of line;
 ctrl + [ - intstead of ESC
 
 
-vim * star command:
 ctrl+n autocompletion of already typed thigns.
 
 searching:
@@ -40,3 +39,12 @@ When replacing:
 \& is ampersand (& is the text that matches the search pattern).
 \1 inserts the text of the first backreference. \2 inserts the second backreference, and so on.
 
+
+Vim training Class
+http://www.youtube.com/watch?v=Nim4_f5QUxA 
+
+
+*, # forward/backwards to next word which is currently under curser
+g*, g# unbounded version (finds prefixes)
+p, P paste after and before
+0, ^, $, beginning, non-space beggining, end of line
